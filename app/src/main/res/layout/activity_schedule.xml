@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#03A9F5"
+    android:transitionGroup="false"
+    tools:context="ru.careofhair.careofhare.ScheduleActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/schedule_head"
+        android:id="@+id/header"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:layout_alignParentEnd="false"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/multi_text"
+        android:background="#fff"
+        android:layout_alignParentEnd="true"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textColor="#333"
+        android:singleLine="false"
+        android:gravity="top|left"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/length"
+        android:gravity="right"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/schedule_info"
+        android:id="@+id/info"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:layout_alignParentEnd="false"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activate"
+        android:id="@+id/btn_ok"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:background="@drawable/button_pressed"
+        android:paddingLeft="@dimen/abc_action_bar_content_inset_material"
+        android:paddingRight="@dimen/abc_action_bar_content_inset_material"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/home_btn"
+            android:background="@drawable/home"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</LinearLayout>

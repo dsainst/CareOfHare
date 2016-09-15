@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F5"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ru.careofhair.careofhare.CareActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/sms_info"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/abc_primary_text_disable_only_material_dark" />
+
+            <TextView
+                android:id="@+id/getDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="21dp"
+                android:enabled="false"
+                android:focusableInTouchMode="false"
+                android:scrollIndicators="bottom"
+                android:singleLine="false"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    style="@style/AppTheme"
+                    android:background="@drawable/info"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/empty"
+                        android:id="@+id/today_clients"
+                        android:layout_weight="1"
+                        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+                        android:textSize="24dp"
+                        android:layout_gravity="top|left|bottom" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/clients"
+                        android:id="@+id/textView3"
+                        android:layout_weight="1"
+                        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/info"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/empty_summa"
+                        android:id="@+id/today_money"
+                        android:layout_weight="1"
+                        android:layout_gravity="left|bottom"
+                        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/summa"
+                        android:id="@+id/textView4"
+                        android:layout_weight="1"
+                        android:layout_gravity="left|bottom"
+                        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yesterday"
+                    android:id="@+id/textView5"
+                    android:textColor="@color/abc_primary_text_disable_only_material_dark"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty_clients"
+                    android:id="@+id/yes_clients"
+                    android:textColor="@color/abc_primary_text_disable_only_material_dark"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty_summa"
+                    android:id="@+id/yes_money"
+                    android:textColor="@color/abc_primary_text_disable_only_material_dark"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="0dp"
+                android:minHeight="0dp"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/btn_start"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/button"
+                    android:layout_alignLeft="@+id/button"
+                    android:layout_alignRight="@+id/button"
+                    android:layout_alignStart="@+id/button"
+                    android:layout_below="@+id/getDate"
+                    android:background="@drawable/button_pressed"
+                    android:clickable="false"
+                    android:enabled="true"
+                    android:paddingLeft="@dimen/abc_action_bar_content_inset_material"
+                    android:paddingRight="@dimen/abc_action_bar_content_inset_material"
+                    android:text="@string/btn_start"
+                    android:textColor="@color/abc_primary_text_disable_only_material_dark"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp" />
+
+                <Button
+                    android:id="@+id/btn_schedule"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_start"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button_pressed"
+                    android:paddingLeft="@dimen/abc_action_bar_content_inset_material"
+                    android:paddingRight="@dimen/abc_action_bar_content_inset_material"
+                    android:text="@string/btn_schedule"
+                    android:textColor="@color/abc_primary_text_disable_only_material_dark"
+                    android:theme="@style/AppTheme"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_start"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button_pressed"
+                    android:paddingLeft="@dimen/abc_action_bar_content_inset_material"
+                    android:paddingRight="@dimen/abc_action_bar_content_inset_material"
+                    android:text="@string/sale_string"
+                    android:textColor="@color/abc_primary_text_disable_only_material_dark"
+                    android:theme="@style/AppTheme"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/info"
+                android:padding="6dp"
+                android:layout_gravity="left">
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/btn_stat"
+                    android:background="@drawable/stat" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/developer"
+                android:id="@+id/developer"
+                android:textColor="@color/abc_primary_text_disable_only_material_dark"
+                android:autoText="false"
+                android:editable="false"
+                android:layout_gravity="bottom|right"
+                android:layout_weight="0.18" />
+        </GridLayout>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="left|center_vertical">
+
+    </ScrollView>
+
+</LinearLayout>
