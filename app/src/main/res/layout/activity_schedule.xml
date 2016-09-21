@@ -84,5 +84,6 @@
             android:id="@+id/home_btn"
             android:background="@drawable/home"
             android:layout_gravity="center_horizontal" />
+
     </LinearLayout>
 </LinearLayout>

@@ -42,4 +42,7 @@
     <string name="insert_db">Запись сохранена</string>
     <string name="sendnow_info">Если на счете телефона не достаточно денег - SMS не будет отправлено.</string>
     <string name="sendnow_info2">В одном SMS примерно 70 знаков. Тарификация по ценам вашего оператора</string>
+
+    <string name="button1">Button1</string>
+    <string name="button2">Button2</string>
 </resources>

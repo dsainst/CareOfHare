@@ -192,11 +192,11 @@
                     android:layout_below="@+id/btn_start"
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/button_pressed"
+                    android:textColor="@color/abc_primary_text_disable_only_material_dark"
+                    android:theme="@style/AppTheme"
                     android:paddingLeft="@dimen/abc_action_bar_content_inset_material"
                     android:paddingRight="@dimen/abc_action_bar_content_inset_material"
                     android:text="@string/btn_schedule"
-                    android:textColor="@color/abc_primary_text_disable_only_material_dark"
-                    android:theme="@style/AppTheme"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginBottom="10dp" />
 
