@@ -13,6 +13,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
@@ -75,17 +76,16 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".MyAlarmService">
-        </receiver>
 
-        <service
-            android:name=".Send2SMS"
-            android:enabled="true"
-            android:exported="true" />
-        <service
-            android:name=".SheduleService"
-            android:enabled="true"
-            android:exported="true" />
+        <service android:name=".MyAlarmService" />
+
+        <receiver android:name=".AlarmReceiver" />
+
+        <service android:name=".Send2SMS" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"></activity>
     </application>
 
 </manifest>

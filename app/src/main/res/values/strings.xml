@@ -4,10 +4,10 @@
     <string name="stat_name">Статистика</string>
     <string name="schedule_name">Рассылка по расписанию</string>
     <string name="sendnow_name">Рассылка сейчас</string>
-    <string name="schedule_head">СЕГОДНЯ ОТПРАВЛЕНО %1$s SMS</string>
-    <string name="schedule_info">SMS автоматически отправится клиенту через 30 дней с момента последнего посещения парикмахерской</string>
     <string name="send_now_name">Рассылка сейчас</string>
     <string name="dev_name">Разработчик</string>
+    <string name="schedule_head">СЕГОДНЯ ОТПРАВЛЕНО %1$s SMS</string>
+    <string name="schedule_info">SMS автоматически отправится клиенту через 30 дней с момента последнего посещения парикмахерской</string>
     <string name="sms_info">Клиент отправивший SMS на этот телефон с суммой заказа получит в ответ SMS с суммой скидки</string>
     <string name="btn_start">Рассылка сейчас</string>
     <string name="btn_schedule">По расписанию</string>
@@ -43,6 +43,14 @@
     <string name="sendnow_info">Если на счете телефона не достаточно денег - SMS не будет отправлено.</string>
     <string name="sendnow_info2">В одном SMS примерно 70 знаков. Тарификация по ценам вашего оператора</string>
 
-    <string name="button1">Button1</string>
-    <string name="button2">Button2</string>
+    <string name="start_text">Старт</string>
+    <string name="cancel_text">Стоп</string>
+    <string name="notify_alert">Проверка клиентов по расписанию</string>
+    <string name="title_activity_login">Введите свой номер</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Телефон без 8</string>
+    <string name="action_sign_in">Подтвердить</string>
+    <string name="hint_number">пример: 9211152623</string>
+    <string name="info_login">Внимание: введенный номер должен быть установлен на данном устройстве, иначе регистрация невозможна!\nВводить данные с смс вам не нужно, регистрация автоматически подтвердится.</string>
 </resources>

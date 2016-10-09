@@ -11,6 +11,10 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ru.careofhair.careofhare.CareActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -215,49 +219,45 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginBottom="10dp" />
 
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/info"
+                        android:padding="6dp"
+                        android:layout_gravity="left">
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/btn_stat"
+                            android:background="@drawable/stat" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/developer"
+                        android:id="@+id/developer"
+                        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+                        android:autoText="false"
+                        android:editable="false"
+                        android:layout_gravity="bottom|right"
+                        android:layout_weight="0.18" />
+                </GridLayout>
+
             </LinearLayout>
 
         </LinearLayout>
 
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center_horizontal">
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/info"
-                android:padding="6dp"
-                android:layout_gravity="left">
-
-                <ImageButton
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/btn_stat"
-                    android:background="@drawable/stat" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/developer"
-                android:id="@+id/developer"
-                android:textColor="@color/abc_primary_text_disable_only_material_dark"
-                android:autoText="false"
-                android:editable="false"
-                android:layout_gravity="bottom|right"
-                android:layout_weight="0.18" />
-        </GridLayout>
     </FrameLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/scrollView"
-        android:layout_gravity="left|center_vertical">
 
     </ScrollView>
 
